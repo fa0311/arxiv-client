@@ -45,3 +45,7 @@ export const reportNumber = (report: string): Query => {
 export const all = (term: string): Query => {
     return `all:"${encodeURIComponent(term)}"`;
 };
+
+export const submittedDate = (from: string, to: string): Query => {
+    return `submittedDate:[${from} TO ${to}]`;
+}
